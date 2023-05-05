@@ -1,0 +1,29 @@
+<form class="row" [formGroup]="service.employeeForm" (submit)="onSubmit()" [class.submitted]="submitted">
+    <div class="col-12 mb-3">
+        <label class="form-label">Full Name</label>
+        <input class="form-control form-control-lg" placeholder="Enter your full name" formControlName="fullName">
+    </div>
+    <div class="col-12 mb-3">
+        <label class="form-label">Email</label>
+        <input class="form-control form-control-lg" placeholder="Enter your email" formControlName="email">
+    </div>
+    <div class="col-4 mb-3">
+        <label class="form-label">Blood Type</label>
+        <input class="form-control form-control-lg" placeholder="Blood Type" formControlName="bloodType">
+    </div>
+    <div class="col-8 mb-3">
+        <label class="form-label">Phone Number</label>
+        <input class="form-control form-control-lg" placeholder="Enter your number" formControlName="phoneNB" type="number">
+    </div>
+    <div class="col-6 mb-3">
+        <label class="form-label">position</label>
+        <input class="form-control form-control-lg" placeholder="Enter your position" formControlName="position">
+    </div>
+    <div class="col-6 mb-3">
+        <label class="form-label">Salary</label>
+        <input class="form-control form-control-lg" placeholder="Per year" formControlName="salary" type="number">
+    </div>
+    <div class="col-12 d-grid">
+        <button class="btn btn-lg btn-dark" type="submit">Submit</button>
+    </div>
+</form>
